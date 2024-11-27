@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revisão de Sistemas Operacionais</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Revisão de Sistemas Operacionais</h1>
+      <p>Professor: Veras</p>
+      <div class="logo"><img src="ap3.png" alt="" /></div>
+    </header>
+
+    <main>
+      <section class="faq">
+        <div class="question">
+          <h2>
+            1. Por que o gerenciamento de memória para os sistemas
+            multiprogramáveis é mais complexo do que para sistemas
+            monoprogramáveis?
+          </h2>
+          <p>
+            É mais complexo porque deve lidar com a alocação dinâmica de memória
+            para vários processos simultâneos, evitando conflitos e maximizando
+            o uso eficiente dos recursos.
+          </p>
+        </div>
+        <div class="question">
+          <h2>2. O que você entende por gerenciamento de memória?</h2>
+          <p>
+            É o processo de controlar e coordenar o uso da memória principal do
+            sistema, garantindo que cada processo tenha acesso suficiente e
+            seguro à memória.
+          </p>
+        </div>
+        <div class="question">
+          <h2>
+            3. Cite alguns problemas encontrados nos computadores atuais que
+            fazem com que o gerenciamento de memória seja fundamental:
+          </h2>
+          <p>
+            Limitação de espaço físico, fragmentação de memória, concorrência
+            entre processos e necessidade de suporte à memória virtual.
+          </p>
+        </div>
+        <div class="question">
+          <h2>
+            4. Conforme a velocidade, custo e capacidade, como você
+            classificaria a memória RAM, dispositivos de armazenamento e cache?
+          </h2>
+          <p>
+            RAM: Alta velocidade, custo médio, capacidade limitada. Cache:
+            Altíssima velocidade, custo elevado, capacidade baixa. Dispositivos
+            de armazenamento: Baixa velocidade, custo baixo, alta capacidade.
+          </p>
+        </div>
+        <div class="question">
+          <h2>5. O que são os registradores e onde estão localizados?</h2>
+          <p>
+            Registradores são pequenas unidades de armazenamento extremamente
+            rápidas localizadas dentro do processador.
+          </p>
+        </div>
+        <div class="question">
+          <h2>
+            6. O processador só executa instruções localizadas em qual memória?
+          </h2>
+          <p>Memória principal (RAM).</p>
+        </div>
+        <div class="question">
+          <h2>7. O que você entende por memória virtual e qual sua função?</h2>
+          <p>
+            Memória virtual expande a memória física utilizando o armazenamento
+            secundário, permitindo a execução de programas maiores que a memória
+            disponível.
+          </p>
+        </div>
+        <div class="question">
+          <h2>
+            8. Quais os tipos de fragmentação de memória e qual a diferença?
+          </h2>
+          <p>
+            Interna: Espaço desperdiçado dentro de uma partição alocada.
+            Externa: Espaço livre, mas fragmentado, que não pode ser usado
+            eficientemente.
+          </p>
+        </div>
+        <div class="question">
+          <h2>9. O que você entende por swapping?</h2>
+          <p>
+            Swapping é o processo de mover processos entre a memória principal e
+            o disco para liberar espaço e manter a multiprogramação.
+          </p>
+        </div>
+        <div class="question">
+          <h2>10. O que é partição de memória?</h2>
+          <p>
+            Partição de memória é a divisão da memória em blocos fixos ou
+            variáveis para alocar processos.
+          </p>
+        </div>
+        <div class="question">
+          <h2>
+            11. Quais os tipos de fragmentação existentes na partição fixa e na
+            partição variável?
+          </h2>
+          <p>
+            Partição fixa: Fragmentação interna. Partição variável: Fragmentação
+            externa.
+          </p>
+        </div>
+        <div class="question">
+          <h2>12. Quais as diferenças entre paginação e segmentação?</h2>
+          <p>
+            Paginação divide a memória em blocos de tamanho fixo (páginas),
+            enquanto segmentação divide em segmentos lógicos de tamanhos
+            variados.
+          </p>
+        </div>
+        <div class="question">
+          <h2>
+            13. Diferenças, vantagens, desvantagens e usos de sistemas de
+            arquivos:
+          </h2>
+          <p>
+            FAT16/FAT32/exFAT: Diferem na capacidade de armazenamento e
+            eficiência. EXT2/EXT3/ReiserFS: Usados no Linux, com EXT3 oferecendo
+            journaling.
+          </p>
+        </div>
+        <div class="question">
+          <h2>14. O que você entende por arquivo?</h2>
+          <p>
+            Um arquivo é uma coleção organizada de dados ou informações
+            armazenados em um dispositivo de armazenamento.
+          </p>
+        </div>
+        <div class="question">
+          <h2>
+            15. Qual o tamanho e estrutura do arquivo presente hoje na maioria
+            dos sistemas?
+          </h2>
+          <p>Geralmente incluem metadados (nome, tipo, tamanho) e conteúdo.</p>
+        </div>
+        <div class="question">
+          <h2>16. Defina estrutura de diretórios e quais os tipos?</h2>
+          <p>
+            Estrutura de diretórios organiza e armazena arquivos no sistema.
+            Tipos: único nível, hierárquico, em rede.
+          </p>
+        </div>
+        <div class="question">
+          <h2>
+            17. Qual tipo de estrutura de diretório não permite a gravação de
+            arquivos com o mesmo nome?
+          </h2>
+          <p>Estrutura de nível único.</p>
+        </div>
+        <div class="question">
+          <h2>18. Qual tipo de estrutura de diretório usada hoje?</h2>
+          <p>A estrutura hierárquica.</p>
+        </div>
+        <div class="question">
+          <h2>
+            19. Qual a vantagem e desvantagem da estrutura de diretórios de
+            nível único?
+          </h2>
+          <p>
+            Vantagem: Simplicidade. Desvantagem: Conflitos com nomes duplicados.
+          </p>
+        </div>
+        <div class="question">
+          <h2>
+            20. Qual tipo de estrutura de diretórios onde cada usuário tem seu
+            diretório particular?
+          </h2>
+          <p>Estrutura de diretórios separados por usuário.</p>
+        </div>
+        <div class="question">
+          <h2>
+            21. Quais os métodos de alocação existentes nos sistemas
+            operacionais?
+          </h2>
+          <p>Contígua, encadeada e por tabela de índices.</p>
+        </div>
+        <div class="question">
+          <h2>
+            22. Que tipo de método de alocação faz com que o disco fique
+            fragmentado?
+          </h2>
+          <p>Alocação contígua.</p>
+        </div>
+        <div class="question">
+          <h2>23. Explique com suas palavras a alocação encadeada:</h2>
+          <p>
+            Armazena cada bloco de um arquivo com um ponteiro para o próximo,
+            permitindo acesso sequencial.
+          </p>
+        </div>
+        <div class="question">
+          <h2>
+            24. Qual método de alocação de arquivos resolve o problema do
+            crescimento dos arquivos?
+          </h2>
+          <p>Alocação por tabela de índices.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 - Sistemas Operacionais</p>
+    </footer>
+  </body>
+</html>

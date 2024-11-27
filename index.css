@@ -1,0 +1,103 @@
+/* Reset e Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Estilo da Logo */
+  .logo img {
+    width: 100px; /* Tamanho ajustado da logo */
+    margin: 0.5rem auto; /* Centraliza a logo no header */
+    display: block;
+  }
+  
+  /* Header */
+  header {
+    background-color: #16283b;
+    color: rgb(228, 228, 228);
+    text-align: center;
+    padding: 0.5rem; /* Ajuste fino no padding */
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    margin-top: 0.5rem; /* Reduz espaço superior */
+    margin-bottom: 0.3rem; /* Reduz espaço inferior */
+  }
+  
+  header p {
+    font-size: 1rem;
+    margin-top: 0.2rem; /* Espaço ajustado entre título e subtítulo */
+  }
+  
+  /* Conteúdo Principal */
+  main {
+    padding: 1rem;
+  }
+  
+  .faq .question {
+    background-color: rgb(0, 167, 50); /* Cor de fundo ajustada */
+    margin-bottom: 1.5rem; /* Espaçamento maior entre perguntas */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+  }
+  
+  .faq .question h2 {
+    background-color: #f0f0f0;
+    padding: 1rem; /* Ajuste no padding interno */
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .faq .question p {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    color: black;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    padding: 0.8rem; /* Ajuste no padding */
+    background-color: #16283b;
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    font-size: 0.8rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    header p {
+      font-size: 0.9rem;
+    }
+  
+    .faq .question h2 {
+      font-size: 0.9rem;
+    }
+  
+    .faq .question p {
+      font-size: 0.8rem;
+    }
+  
+    .logo img {
+      width: 80px; /* Reduz o tamanho da logo em telas pequenas */
+    }
+  }
+  
